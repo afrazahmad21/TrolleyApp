@@ -18,8 +18,8 @@ def get_states():
     current_day_states = get_all_trolley_data_by_date()
 
     active_trolleys = len(current_day_states) or 0
-    max_temperature = max([t['temperature'] for t in current_day_states]) or 0
-    min_temperature = min(t['temperature'] for t in current_day_states) or 0
+    max_temperature = max([t['temperature'] for t in current_day_states]) if len(current_day_states) else 0
+    min_temperature = min(t['temperature'] for t in current_day_states) if len(current_day_states) else 0
     total_trolleys = TrolleyModel.objects.count()
 
     return active_trolleys, max_temperature, min_temperature, total_trolleys
