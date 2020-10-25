@@ -1,0 +1,95 @@
+{% extends "Layout.html" %}
+{% block title %}DCS Smart Trolley{% endblock %}
+{% block head %}
+{{ super() }}
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script>
+
+$(document).ready(function(){
+
+$('#logout').click((e) =>{
+         fetch('/logout')
+        .then(response => response.json())
+        .catch(err =>{
+            console.log(err)
+         })
+})
+
+    fetch('/graphLayout')
+        .then(response => response.json())
+        .then(response =>{
+            var layout = {
+                title: 'Temperature Recording',
+             };
+
+             var data = JSON.parse(response.data)
+            Plotly.newPlot('myDiv', data, layout);
+        }).catch(err =>{
+            console.log(err)
+         })
+
+})
+
+
+
+
+
+</script>
+
+{% endblock %}
+{% block content %}
+<div class="titlebar">
+    <img src="{{ url_for('static', filename='logo.png') }}">
+    DCS Smart Trolley
+</div>
+
+
+<div class="sidenav">
+    <img src="{{ url_for('static', filename='face.png') }}">
+    <div class="desc">{{data['email']}}</div>
+
+    <p><a href="">Dashboard View</a></p>
+    <p><a href="">Account</a></p>
+    <p><a href="">Configure Email</a></p>
+    <p><a href="">Download</a></p>
+    <p><a href="" id="logout">Logout</a></p>
+</div>
+
+<div class="graph-content">
+    <div class="active">
+        <label class="title">
+            Active Trolley
+
+        </label>: {{ data['active_trolleys'] }}
+
+        <label class="title">
+            Total Trolleys
+
+        </label>:{{ data['total_trolleys'] }}
+    </div>
+
+    <div class="temperature">
+        <label class="title">
+            Highest Temperature : {{data['max_temperature']}}
+        </label>
+        <label class="title">
+            Lowest Temperature: {{data['min_temperature']}}
+        </label>
+    </div>
+</div>
+
+
+<div class="content">
+
+    <div class="chart-container">
+        <label class="title">
+            Temperature Recording
+        </label>
+        <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+
+    </div>
+</div>
+
+
+<!--</script>-->
+{% endblock %}

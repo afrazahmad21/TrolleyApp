@@ -1,0 +1,219 @@
+{% extends "Layout.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+{{ super() }}
+
+<link scope="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+<script>
+    $(document).ready(function() {
+            $('#example').DataTable();
+
+             $('#logout').click((e) =>{
+                e.preventDefault()
+                 fetch('/logout')
+                    .then(response => response.json())
+                    .then(response =>{
+                         window.location.href = "/"
+                }).catch(err =>{
+                window.location.href = "/"
+                    console.log(err)
+                 })
+            })
+    } );
+
+
+
+
+
+</script>
+<style type="text/css">
+    .important { color: #336699; }
+
+
+
+
+
+</style>
+
+
+<style>
+    .titlebar {
+    border: none;
+    background-color:gainsboro;
+    color: black;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: top;
+
+}
+
+
+.titlebar img {
+    width: 30px;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+.sidenav {
+    border: none;
+    background-color:gainsboro;
+    width: 150px;
+    height: 100vh;
+    padding-top: 20px;
+    float: left;
+    padding: 10px;
+
+}
+
+.sidenav img {
+        width: 80px;
+        border-radius: 50%;
+        position: relative;
+        left: 35px;
+
+}
+.desc {
+    padding: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+}
+.chart-container-2 {
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.active {
+    font-weight: bolder;
+    border: solid;
+    border-color: green;
+    width: 180px;
+    text-align: center;
+    float: left;
+    margin-left: 8pc;
+    margin-top: 3pc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.temperature {
+    width: 180px;
+    font-weight: bolder;
+    border: solid;
+    border-color:blue;
+    text-align: right;
+    float: right;
+    margin-right: 18pc;
+    margin-top: 3pc;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+a {
+    text-decoration: none;
+}  color: white;
+    }
+
+
+
+
+
+
+
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="titlebar">
+    <img src="{{ url_for('static', filename='logo.png') }}">
+    DCS Smart Trolley
+</div>
+
+
+<div class="sidenav">
+    <img src="{{ url_for('static', filename='face.png') }}">
+    <div class="desc">test1@gmail.com</div>
+
+    <p><a href="">Dashboard View</a></p>
+    <p><a href="">Account</a></p>
+    <p><a href="">Configure Email</a></p>
+    <p><a href="">Download</a></p>
+    <p><a href="" id="logout">Logout</a></p>
+</div>
+
+
+<div class="content">
+
+    <div class="chart-container">
+        <h3>Create a recording</h3>
+        <form method="post" action="/singleRecordTrolley">
+            <div class="form-group">
+                <label for="trolley_input">Trolley</label>
+                <input type="text" name="trolleyId" class="form-control" id="Trolley_input" placeholder="Enter Trolley">
+            </div>
+            <div class="form-group"> <!-- Date input -->
+                <label class="control-label" for="date">Date</label>
+                <input type="date" name="date" class="form-control" id="Trolley_date" name="date"
+                       placeholder="MM/DD/YYY" type="text"/>
+            </div>
+            <div class="form-group">
+                <label for="control-label">Choose your time</label>
+                <input type="time" name="time" id="Trolley_time" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="trolley_input">Temperature</label>
+                <input type="number" name="temperature" class="form-control" id="Temperature_input"
+                       placeholder="Enter Trolley Temperature">
+            </div>
+            <button type="submit" id="Trolley_record" class="btn btn-primary btn-lg btn-block">Record</button>
+        </form>
+        <br>
+        <h3>Upload recordings</h3>
+        <form method="post" action="/uploadCsv" enctype="multipart/form-data">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="csv_upload_name">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="csv_upload_file"
+                           aria-describedby="inputGroupFileAddon01 " accept=".csv">
+                    <label class="custom-file-label" for="">Choose file</label>
+                    <br>
+                </div>
+                <button type="submit" id="Trolley_upload" class="btn btn-success btn-lg btn-block">Upload</button>
+            </div>
+
+        </form>
+        <br>
+        <h3>Recordings</h3>
+        <table id="example" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+            <tr>
+                <th>Trolley Id</th>
+                <th>Recorded Date</th>
+                <th>Temperature</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in all_trolleys: %}
+            <tr>
+                <td>{{ item['trolley_id'] }}</td>
+                <td>{{ item['recorded_date_time'] }}</td>
+                <td>{{ item['temperature'] }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}<!---->

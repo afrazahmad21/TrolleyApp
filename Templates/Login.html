@@ -1,0 +1,35 @@
+{% extends "Layout.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+    .important { color: #336699; }
+
+
+
+
+</style>
+{% endblock %}
+{% block content %}
+
+<div class="wrapper">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="">
+            <label style="margin-top: 20px;"> Trolley App</label>
+        </div>
+        {% if  error %}
+            <div class="alert-danger danger"> Alert: {{error}}</div>
+        {% endif%}
+        <!-- Login Form -->
+        <form method="post" action="/login">
+            <input type="text" id="email" class=" second" name="email" placeholder="email">
+            <input type="password" id="password" class=" third" name="password" placeholder="password">
+            <input type="submit" class=" fourth" value="Log In">
+        </form>
+
+    </div>
+</div>
+{% endblock %}
