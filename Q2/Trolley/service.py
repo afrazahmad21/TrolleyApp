@@ -5,7 +5,6 @@ from datetime import timedelta
 from Q2.Trolley.model import TrolleyModel
 
 
-@functools.lru_cache()
 def get_all_trolley_data_by_date():
     current_day_states = TrolleyModel.objects.aggregate([
         {"$match": {"recorded_date_time": {'$lte': datetime.datetime.now(),
