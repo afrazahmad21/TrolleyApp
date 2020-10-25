@@ -159,12 +159,12 @@ a {
         <form method="post" action="/singleRecordTrolley">
             <div class="form-group">
                 <label for="trolley_input">Trolley</label>
-                <input type="text" name="trolleyId" class="form-control" id="Trolley_input" placeholder="Enter Trolley">
+                <input type="text" name="trolleyId" class="form-control" id="Trolley_input" placeholder="Enter Trolley" required>
             </div>
             <div class="form-group"> <!-- Date input -->
                 <label class="control-label" for="date">Date</label>
                 <input type="date" name="date" class="form-control" id="Trolley_date" name="date"
-                       placeholder="MM/DD/YYY" type="text"/>
+                       placeholder="MM/DD/YYY" type="text" required/>
             </div>
             <div class="form-group">
                 <label for="control-label">Choose your time</label>
@@ -173,7 +173,7 @@ a {
             <div class="form-group">
                 <label for="trolley_input">Temperature</label>
                 <input type="number" name="temperature" class="form-control" id="Temperature_input"
-                       placeholder="Enter Trolley Temperature">
+                       placeholder="Enter Trolley Temperature" required>
             </div>
             <button type="submit" id="Trolley_record" class="btn btn-primary btn-lg btn-block">Record</button>
         </form>
