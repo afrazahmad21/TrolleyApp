@@ -22,6 +22,7 @@ def upload():
 @protected_route()
 def upload_csv():
     print("i am inside upload csv")
+    print(request.files)
     df = pd.read_csv(request.files['file'])
     records = []
     print("reading pandas")
