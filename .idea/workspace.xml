@@ -32,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Templates/Login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="188">
@@ -68,6 +68,11 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/F_MVC/User/service.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,22 +97,10 @@
       <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="116">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Upload.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/Upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,7 +109,7 @@
       <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/F_MVC/User/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
+            <state relative-caret-position="232">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
@@ -151,13 +144,16 @@
       <find>...</find>
       <find>e</find>
       <find>logout</find>
-      <find>redirect</find>
       <find>img</find>
       <find>input[type=text</find>
+      <find>redirect</find>
     </findStrings>
     <replaceStrings>
       <replace>email</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -183,9 +179,9 @@
         <option value="$PROJECT_DIR$/Templates/Dashboard.html" />
         <option value="$PROJECT_DIR$/Templates/Upload.html" />
         <option value="$PROJECT_DIR$/Helpers/middleware.py" />
-        <option value="$PROJECT_DIR$/F_MVC/Trolly/controller.py" />
         <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/Templates/Login.html" />
+        <option value="$PROJECT_DIR$/F_MVC/Trolly/controller.py" />
       </list>
     </option>
   </component>
@@ -195,6 +191,7 @@
     <option name="width" value="1305" />
     <option name="height" value="772" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -207,33 +204,6 @@
             <path>
               <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="F_MVC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="F_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="Trolly" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="F_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="Templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,16 +299,16 @@
     <frame x="61" y="-4" width="1305" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980843" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980843" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32882884" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32882884" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3993994" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3298193" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993994" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -368,16 +338,6 @@
           <url>file://$PROJECT_DIR$/F_MVC/Trolly/controller.py</url>
           <line>41</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/F_MVC/User/controller.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/F_MVC/Trolly/controller.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -656,26 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/User/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Templates/Dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -709,6 +649,29 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/F_MVC/User/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

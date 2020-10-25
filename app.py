@@ -1,5 +1,6 @@
 import os
-
+from eventlet import wsgi
+import eventlet
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify, render_template
 from mongoengine import connect, disconnect
@@ -58,7 +59,11 @@ def create_app(PORT, ENV):
         err = str(error)
         return jsonify(message="something went wrong", error=err, statusCode=400)
 
-    app.run(port=PORT, debug=True)
+    if ENV == 'dev':
+        app.run(port=PORT, debug=True)
+    else:
+        # run on http
+        wsgi.server(eventlet.listen(('', int(PORT))), app)
 
 
 PORT = os.getenv('PORT')
