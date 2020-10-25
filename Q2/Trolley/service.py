@@ -2,14 +2,14 @@ import datetime
 import functools
 from datetime import timedelta
 
-from F_MVC.Trolly.model import TrolleyModel
+from Q2.Trolley.model import TrolleyModel
 
 
 @functools.lru_cache()
 def get_all_trolley_data_by_date():
     current_day_states = TrolleyModel.objects.aggregate([
-        {"$match": {"recorded_date_time": {'$lt': datetime.datetime.now(),
-                                           "$gt": datetime.datetime.now() - timedelta(hours=24)}}}
+        {"$match": {"recorded_date_time": {'$lte': datetime.datetime.now(),
+                                           "$gte": datetime.datetime.now() - timedelta(hours=24)}}}
     ])
     return list(current_day_states)
 

@@ -1,12 +1,11 @@
 import json
 from datetime import datetime
 
-import pandas as pd
-from flask import Blueprint, render_template, request, redirect, url_for, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for, jsonify, session
 
-from F_MVC.Trolly.model import TrolleyModel
-from F_MVC.Trolly.service import get_all_trolleys, get_single_day_graphs_layout
 from Helpers.middleware import protected_route
+from Q2.Trolley.model import TrolleyModel
+from Q2.Trolley.service import get_all_trolleys, get_single_day_graphs_layout
 
 trolley_routes = Blueprint("trolley", __name__)
 
@@ -15,26 +14,8 @@ trolley_routes = Blueprint("trolley", __name__)
 @protected_route()
 def upload():
     all_trolleys = get_all_trolleys()
-    return render_template("Upload.html", all_trolleys=all_trolleys)
-
-
-@trolley_routes.route('/uploadCsv', methods=['POST'])
-@protected_route()
-def upload_csv():
-    print("i am inside upload csv")
-    print(request.files)
-    df = pd.read_csv(request.files['file'])
-    records = []
-    print("reading pandas")
-    for row in df.iterrows():
-        records.append(TrolleyModel(
-            trolley_id=row[1][0],
-            recorded_date_time=datetime.strptime(row[1][1], '%Y-%m-%dT%H:%M'),
-            temperature=int(row[1][2])
-        ))
-
-    TrolleyModel.objects.insert(records)
-    return redirect(url_for('trolley.upload'))
+    email = session['email']
+    return render_template("Upload.html", all_trolleys=all_trolleys, email=email)
 
 
 @trolley_routes.route('/singleRecordTrolley', methods=['POST'])

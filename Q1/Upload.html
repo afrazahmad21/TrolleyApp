@@ -8,6 +8,12 @@
     $(document).ready(function() {
             $('#example').DataTable();
 
+            $('#dashboard').click(e =>{
+                e.preventDefault()
+
+                window.local.href = "/login"
+             })
+
              $('#logout').click((e) =>{
                 e.preventDefault()
                  fetch('/logout')
@@ -142,9 +148,9 @@ a {
 
 <div class="sidenav">
     <img src="{{ url_for('static', filename='face.png') }}">
-    <div class="desc">test1@gmail.com</div>
+    <div class="desc">{{email}}</div>
 
-    <p><a href="/login">Dashboard View</a></p>
+    <p><a href="/login" id="">Dashboard View</a></p>
     <p><a href="">Account</a></p>
     <p><a href="">Configure Email</a></p>
     <p><a href="">Download</a></p>
@@ -186,7 +192,7 @@ a {
                 </div>
                 <div class="custom-file">
                     <input type="file" name="file" class="custom-file-input" id="csv_upload_file"
-                           aria-describedby="inputGroupFileAddon01 " accept=".csv">
+                           aria-describedby="inputGroupFileAddon01 " accept=".csv" required>
                     <label class="custom-file-label" for="">Choose file</label>
                     <br>
                 </div>

@@ -4,7 +4,7 @@ import eventlet
 from dotenv import load_dotenv
 from flask import Flask, request, jsonify, render_template
 from mongoengine import connect, disconnect
-from F_MVC.User.service import init_user
+from Q2.User.service import init_user
 
 from routes import ROUTES
 
@@ -13,7 +13,7 @@ load_dotenv()
 
 def create_app(PORT, ENV):
     print(PORT, ENV)
-    app = Flask(__name__, template_folder="Templates")
+    app = Flask(__name__, template_folder="Q1")
 
     for route in ROUTES:
         app.register_blueprint(route)

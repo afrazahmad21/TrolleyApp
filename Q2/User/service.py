@@ -1,6 +1,6 @@
 import bcrypt
 
-from F_MVC.User.model import User
+from Q2.User.model import User
 
 
 def hash_password(password):

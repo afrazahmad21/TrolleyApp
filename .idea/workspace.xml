@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68bd0fca-ea21-4e32-bfc0-39a77e2f6e9e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Templates/Dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/Templates/Upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q3/UploadFiles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q3/UploadFiles/controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Q3/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/Trolly/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/Trolly/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/Trolley/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/Trolly/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/Trolley/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/Trolly/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/Trolley/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/User/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/User/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/User/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/User/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/User/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/User/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/User/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/User/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F_MVC/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Q2/Trolley/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Q1/Dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Q1/Layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Q1/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Templates/Upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/Q1/Upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,41 +31,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDocument.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Helpers/BaseDocument.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="58" column="67" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/Dashboard.html">
+        <entry file="file://$PROJECT_DIR$/Q1/Dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="50" column="22" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="22" />
+            <state relative-caret-position="266">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Layout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Templates/Layout.html">
+        <entry file="file://$PROJECT_DIR$/Q1/Layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="4" column="78" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="78" />
@@ -56,20 +49,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Helpers/middleware.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/model.py">
+        <entry file="file://$PROJECT_DIR$/Q2/Trolley/model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="9" />
@@ -80,11 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/service.py">
+      <file leaf-file-name="routes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="133">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Q2/Trolley/service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -93,10 +86,10 @@
         </entry>
       </file>
       <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/controller.py">
+        <entry file="file://$PROJECT_DIR$/Q2/Trolley/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="257">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -104,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Upload.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Templates/Upload.html">
+      <file leaf-file-name="Upload.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Q1/Upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+            <state relative-caret-position="200">
+              <caret line="194" column="91" selection-start-line="194" selection-start-column="91" selection-end-line="194" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
               </folding>
@@ -117,10 +110,22 @@
         </entry>
       </file>
       <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/F_MVC/User/controller.py">
+        <entry file="file://$PROJECT_DIR$/Q3/UploadFiles/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Q2/User/controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-228">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="e#0#72#0" expanded="true" />
               </folding>
@@ -156,7 +161,9 @@
       <find>logout</find>
       <find>img</find>
       <find>input[type=text</find>
+      <find>email</find>
       <find>redirect</find>
+      <find>Upload recordings</find>
     </findStrings>
     <replaceStrings>
       <replace>email</replace>
@@ -172,9 +179,7 @@
         <option value="$PROJECT_DIR$/F_MVC.py" />
         <option value="$PROJECT_DIR$/Templates/User/model.py" />
         <option value="$PROJECT_DIR$/Templates/User/controller.py" />
-        <option value="$PROJECT_DIR$/routes.py" />
         <option value="$PROJECT_DIR$/Templates/Layout.html.py" />
-        <option value="$PROJECT_DIR$/routes.py" />
         <option value="$PROJECT_DIR$/Helpers/BaseDocument.py" />
         <option value="$PROJECT_DIR$/F_MVC/Trolly/model.py" />
         <option value="$PROJECT_DIR$/F_MVC/Trolly/utils.py" />
@@ -193,6 +198,14 @@
         <option value="$PROJECT_DIR$/F_MVC/Trolly/controller.py" />
         <option value="$PROJECT_DIR$/Templates/Dashboard.html" />
         <option value="$PROJECT_DIR$/Templates/Upload.html" />
+        <option value="$PROJECT_DIR$/Q3/UploadFiles/controller.py" />
+        <option value="$PROJECT_DIR$/routes.py" />
+        <option value="$PROJECT_DIR$/routes.py" />
+        <option value="$PROJECT_DIR$/Q2/Trolley/controller.py" />
+        <option value="$PROJECT_DIR$/Q1/Dashboard.html" />
+        <option value="$PROJECT_DIR$/Q2/User/controller.py" />
+        <option value="$PROJECT_DIR$/Q1/Upload.html" />
+        <option value="$PROJECT_DIR$/Q2/Trolley/service.py" />
       </list>
     </option>
   </component>
@@ -219,18 +232,24 @@
             <path>
               <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="F_MVC" type="462c0819:PsiDirectoryNode" />
+              <item name="Q1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="F_MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="Trolly" type="462c0819:PsiDirectoryNode" />
+              <item name="Q2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
-              <item name="Templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Q2" type="462c0819:PsiDirectoryNode" />
+              <item name="Trolley" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrolleyApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrolleyApp" type="462c0819:PsiDirectoryNode" />
+              <item name="Q2" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,16 +345,16 @@
     <frame x="61" y="-4" width="1305" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980843" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980843" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298193" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32882884" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3298193" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298193" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3990964" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -352,19 +371,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/F_MVC/Trolly/controller.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/F_MVC/Trolly/controller.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/F_MVC/Trolly/controller.py</url>
+          <url>file://$PROJECT_DIR$/Q2/Trolley/controller.py</url>
           <line>42</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Q2/Trolley/service.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -374,7 +388,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="32" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -470,7 +484,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/model.py">
+    <entry file="file://$PROJECT_DIR$/Q2/Trolley/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="18" />
@@ -480,7 +494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Upload.html">
+    <entry file="file://$PROJECT_DIR$/Q1/Upload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
@@ -490,22 +504,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/controller.py">
+    <entry file="file://$PROJECT_DIR$/Q2/Trolley/controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -566,7 +570,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/User/service.py">
+    <entry file="file://$PROJECT_DIR$/Q2/User/service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
@@ -576,7 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/User/model.py">
+    <entry file="file://$PROJECT_DIR$/Q2/User/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
@@ -593,7 +597,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Login.html">
+    <entry file="file://$PROJECT_DIR$/Q1/Login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
@@ -643,7 +647,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/model.py">
+    <entry file="file://$PROJECT_DIR$/Q2/Trolley/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="9" />
@@ -653,56 +657,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/User/controller.py">
+    <entry file="file://$PROJECT_DIR$/routes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
-            <element signature="e#0#72#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Layout.html">
+    <entry file="file://$PROJECT_DIR$/Q1/Layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="78" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/F_MVC/Trolly/controller.py">
+    <entry file="file://$USER_HOME$/PycharmProjects/Flask/venv/lib/python3.5/site-packages/flask/templating.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="124">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Q1/Dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Q2/User/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Q3/UploadFiles/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Q1/Upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="194" column="91" selection-start-line="194" selection-start-column="91" selection-end-line="194" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Q2/Trolley/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Dashboard.html">
+    <entry file="file://$PROJECT_DIR$/Q2/Trolley/service.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Templates/Upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="146" column="22" selection-start-line="146" selection-start-column="22" selection-end-line="146" selection-end-column="22" />
+        <state relative-caret-position="58">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
