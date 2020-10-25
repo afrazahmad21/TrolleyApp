@@ -24,7 +24,7 @@ def upload_csv():
     print("i am inside upload csv")
     df = pd.read_csv(request.files['file'])
     records = []
-
+    print("reading pandas")
     for row in df.iterrows():
         records.append(TrolleyModel(
             trolley_id=row[1][0],
