@@ -1,5 +1,4 @@
 import datetime
-import functools
 from datetime import timedelta
 
 from Q2.Trolley.model import TrolleyModel
